@@ -1,10 +1,40 @@
 package com.bridgelab;
 
-public class Contact {
+class Contact {
+	/**
+	 * private variables can only be accessed within the same class (an outside
+	 * class has no access to it) private = restricted access However, it is
+	 * possible to access them if we provide public get and set methods.
+	 */
+
 	// variables
 	private String firstName, lastName, address, city, state, email;
 	private int zip;
 	private long phoneNumber;
+
+	/**
+	 * create a parameterized constructor
+	 * 
+	 * @param firstName   in address book
+	 * @param lastName    in address book
+	 * @param address     in address book
+	 * @param city        in address book
+	 * @param state       in address book
+	 * @param zip         in address book
+	 * @param phoneNumber in address book
+	 * @param email       in address book
+	 */
+	public Contact(String firstName, String lastName, String address, String city, String state, int zip,
+			Long phoneNumber, String email) {
+		this.firstName = firstName;
+		this.lastName = lastName;
+		this.address = address;
+		this.city = city;
+		this.state = state;
+		this.zip = zip;
+		this.phoneNumber = phoneNumber;
+		this.email = email;
+	}
 
 	/**
 	 * Used getter and setter to set and get the value. Setter is used to set the
