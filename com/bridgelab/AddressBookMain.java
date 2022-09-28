@@ -96,12 +96,14 @@ public class AddressBookMain {
 				addressBook.countByOption();
 				break;
 			case 7:
+				System.out.println("Welcome to the sorting data alphabetically");
+				addressBook.sortByOption();
+			case 8:
 				/**
 				 * closing the scanner
 				 */
 				sc.close();
 				return;
-
 			default:
 				System.out.println("You Entered Invalid Choice....!");
 				break;
