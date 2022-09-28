@@ -31,8 +31,9 @@ public class AddressBookMain {
 			 * 1st display welcome msg then display al the option
 			 */
 			System.out.println("\nWelcome to Address Book System");
+
 			System.out.println(
-					"1. New Address Book \n2. Select Address Book \n3. Delete Address Book \n4. Search Contact Data \n5. View Contact Data \n6. Exit");
+					"1. New Address Book \n2. Select Address Book \n3. Delete Address Book \n4. Search Contact Data \n5.View Contact Data \n6.Count Contacts \n7. Exit");
 			/**
 			 * choose the option what u want
 			 */
@@ -91,11 +92,16 @@ public class AddressBookMain {
 				addressBook.viewByOption(addressBookMap);
 				break;
 			case 6:
+				System.out.println("Welcome to the counter");
+				addressBook.countByOption();
+				break;
+			case 7:
 				/**
-				 * closing the sacnner
+				 * closing the scanner
 				 */
 				sc.close();
 				return;
+
 			default:
 				System.out.println("You Entered Invalid Choice....!");
 				break;

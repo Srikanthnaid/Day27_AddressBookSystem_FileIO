@@ -1,6 +1,6 @@
 package com.bridgelab;
 
-class Contact {
+class Contacts {
 	/**
 	 * private variables can only be accessed within the same class (an outside
 	 * class has no access to it) private = restricted access However, it is
@@ -24,7 +24,7 @@ class Contact {
 	 * @param phoneNumber in address book
 	 * @param email       in address book
 	 */
-	public Contact(String firstName, String lastName, String address, String city, String state, int zip,
+	public Contacts(String firstName, String lastName, String address, String city, String state, int zip,
 			Long phoneNumber, String email) {
 		this.firstName = firstName;
 		this.lastName = lastName;
